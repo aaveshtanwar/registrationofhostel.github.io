@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hostel.css">
+    <title>Form</title>
+    <script>
+        element.addEventListener("click", resetb);
+        element.addEventListener("click", submitb);
+        function resetb() {
+            alert("Please Refill Form Details has been cleared");
+        }
+        function submitb() {
+            alert("Your form has been submitted");
+        }
+        
+
+    </script>
+</head>
+
+<body>
+    <form action="Hostel.php" method="post">
+    <div class="main">
+        <table>
+            <form>
+                <!--Registration form-->
+                <h2 class="heading">Hostel Registeration Form</h2>
+
+                <!-- <label> Name:</label><br> -->
+
+                <label for="ff" class="input2">First name:<span class="required">*</span></label>
+                <input type="text" name="myname" class="input1"required id="ff" placeholder="Enter your first name"><br><br>
+
+                <label for="gg" class="input2">Last name:<span class="required">*</span></label>
+                <input type="text" name="myname" class="input1"required id="gg" placeholder="Enter your last name"><br><br>
+
+                <label for="dob11" class="input2"> Birthdate:<span class="required">*</span></label>
+                <input type="date" class="date1" required name="date" id="dob11"><br><br>
+                <br>
+                <label class="input2" id="gender"> Gender:<span class="required">*</span></label>
+                <label for="male"> Male: <input type="radio" name="mygender" required id="male"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="female">Female: <input type="radio" name="mygender"
+                        id="female"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="others">Others:<input type="radio" name="mygender"
+                        id="others"></label>&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                <br>
+                <label for="race" class="input2"> Nationality:<span class="required">*</span></label>
+                <select id="race"required>
+                    <option> African</option>
+                    <option> American</option>
+                    <option> Asian</option>
+                    <option>Indian</option>
+                    <option> Others</option>
+                </select><br><br>
+
+                <label for="Hostel preference" class="input2"> Hostel Preference:<span class="required">*</span></label>
+                <select id="Hostel preference"required>
+                    <option> 5 seater( for boys only)</option>
+                    <option> 4 seater</option>
+                    <option> 3 seater</option>
+                    <option>2 seater( for boys only)</option>
+                    <option> 1 seater( for boys only)</option>
+                </select><br><br>
+
+
+                <label for="email2" class="input2"> Email-Id:</label>
+                <input type="email" name="email-id" id="email2" class="input1" placeholder="abc@gmail.com"><br><br>
+
+                <!-- Address:<br><br> -->
+                <label for="add2" class="input2">Permanent Address<span class="required">*</span></label>
+                <br><textarea name="myadd2" id="add2" required="required" cols="50" rows="7" maxlength="200"
+                    placeholder="Enter your Permanent address"></textarea><br><br>
+
+                <label for="add1" class="input2">Corressponding Address:</label>
+                <br><textarea name="myadd1" id="add1"required cols="50" rows="7" maxlength="200"
+                    placeholder="Enter your corressponding address"></textarea><br><br>
+
+
+                    <label class="input2"> State:<span class="required">*</span></label>
+                <select id="state" required="required">
+                    <option>Andhra Pradesh</option>
+                    <option> Assam</option>
+                    <option> Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option> Karnataka</option>
+                    <option>Kerala</option>
+                    <option> Chhattisgarh</option>
+                    <option>Uttar Pradesh</option>
+                    <option> Goa</option>
+                    <option> Gujarat</option>
+                    <option> Haryana </option>
+                    <option> Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>West Bengal</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option> Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option> Nagaland</option>
+                    <option> Orissa</option>
+                    <option> Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option> Telangana</option>
+                    <option> Tripura</option>
+                    <option>Uttarakhand</option>
+                </select><br><br>
+
+
+                <label for="city" class="input2">City:<span class="required">*</span></label>
+                <input type="text" name="mycity" required="required" id="city" class="input1" placeholder="Enter your City"><br><br>
+
+                
+
+                <label for="pin" class="input2"> Pin code:<span class="required">*</span></label>
+
+                <input type="text" name="mypin" class="input1" required="required" id="pin" placeholder="Enter Pin"><br><br>
+
+                <label for="card" class="input2"> Adhar Card Number:<span class="required">*</span></label>
+
+                <input type="text" name="mycard" id="card" class="input1" required="required" placeholder="Enter your 12 digit no."><br><br>
+
+                <input type="submit" class="submit" onclick="javascript:submitb();" value="Register Now">
+                <t> </t><input type="reset" class="reset" onclick="javascript:resetb();" value="Reset now">
+            </form>
+        </table>
+    </div>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+ 
+    </form>
+</body>
+
+</html>
